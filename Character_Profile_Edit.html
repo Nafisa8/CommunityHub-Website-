@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Characterpedia-edit</title>
+
+	<script src="https://kit.fontawesome.com/3b9422a35a.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="CSSCharacterProfile.css">
+	<script type="text/javascript"  src ="checkname.js"> </script>
+</head>
+<body>
+	    <div class="sidenav">
+	      <img src="CVClogo.png" alt="Website Logo">
+	      <a href="Characterpedia_Search_.html">
+	        <i class="fa-solid fa-magnifying-glass"></i> Search </a>
+	      <a href="Universe_Profile_Edit.html">
+	        <i class="fa-solid fa-plus"></i> Create Verse </a>
+	      <a href="Character_Profile_Edit.html">
+	        <i class="fa-solid fa-user-plus"></i> Create Character </a>
+	      <a href="profile.html">
+	        <i class="fa-regular fa-user"></i></i> Profile </a>
+	      <a href="About.html">
+	        <i class="fa-solid fa-bars"></i> About </a>
+	    </div>
+	
+	<div class="secondsidenav">
+        <a href="#sectionheader"> <span class= "sectionheader">Sections</span></a>
+        <a href="#Character_name"> Character</a>
+		<a href="#Universe"> Universe</a>
+        <a href="#Gallery"> Gallery</a>
+		<a href="#Introduction"> Introduction</a>
+        <a href="#Personality"> Personality</a>
+		<a href="#Relationships"> Relationships</a>
+		<a href="#Abilities"> Abilities</a>
+		<a href="#History"> History</a>
+		<a href="#Miscellaneous"> Miscellaneous</a>
+    </div>
+
+    <div class="content">
+	<form action="Characterpedia_edit_php.php" method="post" onsubmit="chkFields();">
+        <h1 id="CharacterName">Character name</h1>
+        <label for="character_name"></label>
+        <textarea id="CharacterName" name="CharacterName" rows="4" cols="50" placeholder="Write Character name"></textarea>
+        <h2 id="Universe">Universe name</h2>
+        <label for="Universe"></label>
+        <textarea id="Universe" name="Universe" rows="4" cols="50" placeholder="Write Universe name where character lives"></textarea>
+        <h2 id="Introduction">Introduction</h2>
+        <label for="Introduction"></label>
+        <textarea id="Introduction" name="Introduction" rows="4" cols="50" placeholder="Write about introduction"></textarea>
+        <h2 id="Personality">Personality</h2>
+        <label for="Personality"></label>
+        <textarea id="Personality" name="Personality" rows="4" cols="50" placeholder="Write about Personality"></textarea>
+        <h2 id="Abilities">Ability</h2>
+        <label for="Abilities"></label>
+        <textarea id="Abilities" name="Abilities" rows="4" cols="50" placeholder="Write about character abilities and powers"></textarea>
+        <h2 id="History">History</h2>
+        <label for="History"></label>
+        <textarea id="History" name="History" rows="4" cols="50" placeholder="Write about character History"></textarea>
+        <h2 id="Relationships">Relationships</h2>
+        <label for="Relationships"></label>
+        <textarea id="Relationships" name="Relationships" rows="4" cols="50" placeholder="Write about character relationships"></textarea>
+        <h2 id="Miscellaneous">Miscellaneous</h2>
+        <label for="Miscellaneous"></label>
+        <textarea id="Miscellaneous" name="Miscellaneous" rows="4" cols="50" placeholder="Write miscellaneous facts about character"></textarea>
+        <br>
+		
+        <div class="buttons">
+        <input type="submit" name="submit" value="submit">
+    </div>
+	</form>
+</body>
+</html>

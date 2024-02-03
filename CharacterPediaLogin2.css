@@ -1,0 +1,83 @@
+/**************
+     IS 448
+          
+     CSS File for CharacterPedia Login Screen
+**************/ 
+
+/*Code that sets the background color of website */
+body{
+	background-image: url('charactercarousel.jpg');
+}
+
+/*Code that implements the appearance of the h2 header */
+h2{
+	font-size: 50px;
+	text-align: right;
+	margin: 0;
+	color: #FFF;
+}
+
+
+/*Code that sets the size and location of the company logo */
+.small-logo{
+	width: 160px;
+	height: 150px;
+	float: left;
+}
+
+/*Code that creates the box and sets its size, location, and color */
+.login-box{
+	border: 3px solid #000;
+	background-color: #333;
+	width: 490px;
+	height: 575px;
+	margin: 1em auto;
+}
+
+/* Code that adds space around the login info relative to the box to make it cleaner looking*/
+.login-info{
+	padding: 20px;	
+}
+
+/*Code that creates the shape and sets the color, size, and location of the login button and the text */
+.login-button{
+	background-color: #F00;
+	border-radius: 15px;
+	padding: 10px;
+	width: 95%;
+	font-size: 16px;
+	color: white;
+	font-weight: bold;
+}
+
+/* Code that creates the shape and sets the color, size, and locatioon of the signup buttona and text  */
+.signup-button{
+	border-radius: 15px;
+	padding: 10px;
+	width: 95%;
+	font-size: 16px;
+	background-color: #FFF;
+	font-weight: bold;
+}
+
+/* Code that creates the shape and sets the color, size, and locatioon of the username buttona and text  */
+.username-box input{
+	background-color: #D9D9D9;
+	font-size: 16px;
+	width: 95%;
+	padding: 5px;
+	border: 1px solid #000;
+	border-radius: 5px;
+
+}
+
+/* Code that creates the shape and sets the color, size, and locatioon of the password buttona and text  */
+.password-box input{
+	background-color: #D9D9D9;
+	font-size: 16px;
+	width: 95%;
+	padding: 5px;
+	border: 1px solid #000;
+	border-radius: 5px;
+
+}

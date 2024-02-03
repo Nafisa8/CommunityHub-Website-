@@ -1,0 +1,50 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Characterpedia</title>
+    <script src="https://kit.fontawesome.com/3b9422a35a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="profilestyle.css">
+	
+</head>
+<body>
+    <div class="sidenav">
+        <img src="CVC.png" alt="Website Logo">
+        <a href="Characterpedia_Search_.html"><i class="fas fa-search"></i> Search</a>
+        <a href="Universe_Profile_Edit.html"><i class="fas fa-plus"></i> Create Verse</a>
+        <a href="Character_Profile_Edit.html"><i class="fas fa-user-plus"></i> Create Character</a>
+        <a href="profile.html"><i class="far fa-user"></i> Profile</a>
+        <a href="#"><i class="fas fa-bars"></i> About</a>
+    </div>
+
+    <div class="content">
+        <h1>Profile Edit</h1>
+        <div class="floating-icon">
+            <img src="profileicon.png" alt="icon" width="250" height="250" >
+        </div>
+        <div class="contenttwo">
+		<!-- styled go back button-->
+               <a href="profile.html" class="button-link">Go Back</a><br>
+
+      <form method="post" action="profile_editphp.php">
+
+    <!-- Name input with faded hint -->
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name" placeholder="Write your name here" class="fade-hint"><br>
+
+    <!-- About yourself textarea with faded hint -->
+    <label for="about">About Yourself:</label><br>
+    <textarea id="about" name="about" placeholder="Write about yourself" rows= "10" cols= "60" class="fade-hint"></textarea>
+
+    <!-- Save Edit button -->
+    <br><button class="save-button">Save Edit</button>
+	
+	
+	</form>
+  </div>
+        </div>
+
+
+</body>
+</html>

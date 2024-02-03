@@ -1,0 +1,8 @@
+/* Code that creates the design for the confirmation page when logging in or signing up  */
+body {
+    width: 600px;
+    margin: 1em auto;
+    background-color: white;
+    border: 5px #5A5A5A solid;
+    padding: 0.5em;
+}

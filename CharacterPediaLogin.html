@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title> CharacterPedia Login</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="CharacterPediaLogin2.css" type="text/css"/>
+<script type = "text/javascript"  src = "CharacterPediaLogin.js" >
+    </script>
+
+</head>
+
+<body>
+	
+	<!-- This is for the the entire login box as a whole, where all the information resides -->
+	<div class="login-box">
+
+		<img src="CVClogo.png" alt="banner" class="small-logo"/>
+		
+		<!-- This is for the login info that is inside the box, such as username, password, login, and signup boxes -->
+		<div class="login-info">
+			<h2> Login </h2>
+			<form action="CharacterPediaLogin.php" method="POST" onsubmit="chkFields();">
+				<!-- This is for the username box which allows users to type inside it -->
+				<div class="username-box">
+					<label> 
+					<input type = "text" name = "uname" id = "username" size = "25" maxlength="25" placeholder="Username"/>
+			</label>
+				</div>
+			
+			<br>
+			<br>
+				<!-- This is for the password box which allows users to type in it and does not show the input -->
+				<div class="password-box">
+					<label> 
+					<input type = "password" name="password" id = "password" size = "10" maxlength="10" placeholder="Password" />
+					</label>
+				</div>
+		
+			<br>
+			<br>
+			<!-- This is the login button that users can click on and it will log them in -->
+			<input type = "submit" name = "login" id = "login" class="login-button" value="Login"/>
+			
+			<br>
+			<br>
+			
+			<!-- This is the sign up button that users can click on and it will allow them to create an account -->
+			<input type = "submit" name = "signup" id = "signup" class="signup-button" value="Sign-Up"/>
+
+
+			</form>
+		</div>
+	</div>
+	
+</body>

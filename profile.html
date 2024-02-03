@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Characterpedia</title>
+    <script src="https://kit.fontawesome.com/3b9422a35a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="profilestyle.css">
+	    <script src="confirmComment.js"></script>
+
+	
+</head>
+<body>
+    <div class="sidenav">
+        <img src="CVC.png" alt="Website Logo">
+        <a href="Characterpedia_Search_.html"><i class="fas fa-search"></i> Search</a>
+        <a href="Universe_Profile_Edit.html"><i class="fas fa-plus"></i> Create Verse</a>
+        <a href="Character_Profile_Edit.html"><i class="fas fa-user-plus"></i> Create Character</a>
+        <a href="profile.html"><i class="far fa-user"></i> Profile</a>
+        <a href="#"><i class="fas fa-bars"></i> About</a>
+    </div>
+
+    <div class="content">
+        <h1>Profile</h1>
+        <div class="floating-icon">
+            <img src="profileicon.png" alt="icon" width="250" height="250" >
+	
+        </div>
+        <div class="contenttwo">
+		
+				<!-- Styled button link for "Edit Profile" -->
+            <a href="profileEdit.html" class="edit-profile-button">Edit Profile</a>
+	            
+				<!-- Your profile content goes here -->
+            <p>
+                This is the main content of your profile.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Magna sit amet purus gravida.
+                Duis ut diam quam nulla porttitor massa id neque aliquam. Quam nulla porttitor massa id neque aliquam vestibulum morbi blandit. Non arcu risus quis varius quam.
+                Malesuada fames ac turpis egestas maecenas pharetra convallis posuere.
+                Gravida dictum fusce ut placerat. Placerat vestibulum lectus mauris ultrices eros in cursus. Id aliquet lectus proin nibh nisl. Egestas dui id ornare arcu odio ut sem nulla.
+                Consectetur adipiscing elit pellentesque habitant morbi tristique. Tortor at auctor urna nunc id cursus metus.
+            </p>
+        </div>
+    </div>
+
+     <!-- Comment box section -->
+	<div class="comment-box">
+		<form id="commentForm" method="post" action="profileComment.php">
+			<label for="comment">Share your thoughts on this character's Profile:</label><br>
+				<textarea id="comment" name="comment" rows="2" cols="60"></textarea><br> 
+	
+     <!-- Button to add comment with confirmation -->
+			<input class="c-button" type="button" value="Add Comment" onclick="confirmAddComment()">
+		</form>
+	</div>
+	    <!-- Recent items section -->
+    <div class="recent-items">
+        <h1>Recent Verses</h1>
+        <span class="nav-button" onclick="prevRecent()"><i class="fas fa-arrow-left"></i></span>
+        <div class="recent-item">Recent 1</div>
+        <div class="recent-item">Recent 2</div>
+        <div class="recent-item">Recent 3</div>
+        <span class="nav-button" onclick="nextRecent()"><i class="fas fa-arrow-right"></i></span>
+    </div>
+
+</body>
+</html>
